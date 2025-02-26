@@ -1,0 +1,48 @@
+body {
+    background-color: #1a1625;
+    color: #ffffff;
+}
+
+.gradient-text {
+    background: linear-gradient(45deg, #9d4edd, #c77dff);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+}
+
+.nav-link {
+    position: relative;
+    color: #ffffff;
+    text-decoration: none;
+}
+
+.nav-link::after {
+    content: '';
+    position: absolute;
+    width: 0;
+    height: 2px;
+    bottom: -2px;
+    left: 0;
+    background: linear-gradient(45deg, #9d4edd, #c77dff);
+    transition: width 0.3s ease;
+}
+
+.nav-link:hover::after {
+    width: 100%;
+}
+
+.card {
+    background: rgba(26, 22, 37, 0.8);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(157, 78, 221, 0.2);
+}
+
+.button-gradient {
+    background: linear-gradient(45deg, #9d4edd, #c77dff);
+    transition: all 0.3s ease;
+}
+
+.button-gradient:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 15px rgba(157, 78, 221, 0.4);
+}
